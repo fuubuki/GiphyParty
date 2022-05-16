@@ -1,0 +1,137 @@
+p {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    color: white;
+}
+
+#outterDiv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#searchform {
+    display: inline;
+}
+
+img {
+    padding: 10px;
+}
+
+#searchGifs {
+  appearance: none;
+  background-color: #2ea44f;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+#searchGifs:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+#searchGifs:hover {
+  background-color: #2c974b;
+}
+
+#searchGifs:focus {
+  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+  outline: none;
+}
+
+#searchGifs:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, .1);
+  color: rgba(255, 255, 255, .8);
+  cursor: default;
+}
+
+#searchGifs:active {
+  background-color: #298e46;
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+
+#removeGifs {
+    appearance: none;
+    background-color: #a42e2e;
+    border: 1px solid rgba(27, 31, 35, .15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 6px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  
+  #removeGifs:focus:not(:focus-visible):not(.focus-visible) {
+    box-shadow: none;
+    outline: none;
+  }
+  
+  #removeGifs:hover {
+    background-color: #97332c;
+  }
+  
+  #removeGifs:focus {
+    box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+    outline: none;
+  }
+  
+  #removeGifs:disabled {
+    background-color: #d39d94;
+    border-color: rgba(27, 31, 35, .1);
+    color: rgba(255, 255, 255, .8);
+    cursor: default;
+  }
+  
+  #removeGifs:active {
+    background-color: #8e3029;
+    box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+  }
+
+  #input {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    font-size: 14px;
+    padding: 2 px;
+    border-radius: 0.3rem;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-top: 0.3rem solid transparent;
+    border-bottom: 0.5rem solid transparent;
+    transition: all 0.3s;
+  }
+
+  
