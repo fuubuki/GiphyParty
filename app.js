@@ -1,15 +1,21 @@
 //IeOQZA4twT8SA8J4SZwsyjUe1XHctk7A
 async function searchGiphy(search) {
-    const url = `https://api.giphy.com/v1/gifs/search?api_key=IeOQZA4twT8SA8J4SZwsyjUe1XHctk7A&q=${search}&limit=1&offset=0&rating=g&lang=en`;
-    const res = await axios.get(url);
-    const img = document.createElement('img');
-    img.src = res.data.data[0].images.original.url;
-    input.value = '';
-    const body = document.querySelector('body');
-    body.append(img);
+    try {
+        const url = `https://api.giphy.com/v1/gifs/search?api_key=IeOQZA4twT8SA8J4SZwsyjUe1XHctk7A&q=${search}&limit=1&offset=0&rating=g&lang=en`;
+        const res = await axios.get(url);
+        const img = document.createElement('img');
+        img.src = res.data.data[0].images.original.url;
+        input.value = '';
+        const body = document.querySelector('body');
+        body.append(img);
+    } catch(e) {
+        alert("GIF NOT FOUND!")
+        getRandomGiphy();
+        input.value = '';
+    }
 }
 
-async function randomGiphy() {
+async function getRandomGiphy() {
     const url = 'https://api.giphy.com/v1/gifs/random?api_key=IeOQZA4twT8SA8J4SZwsyjUe1XHctk7A'
     const res = await axios.get(url);
     const img = document.createElement('img');
@@ -25,7 +31,7 @@ form.addEventListener('submit', function(event){
     if(input.value)
         searchGiphy(input.value);
     else
-        randomGiphy();
+        getRandomGiphy();
 });
 
 const removeGifsBtn = document.querySelector('#removeGifs');
